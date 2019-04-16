@@ -1,0 +1,40 @@
+Klasyczny algorytm mnozenia macierzy, liczba watkow 4 
+Czas wykonania programu:   0.2980 sec (0.0010 sec rozdzielczosc pomiaru)
+Czas wykonania programu:   0.0480 sec (0.0010 sec rozdzielczosc pomiaru)
+Czas wykonania programu:   0.2940 sec (0.0010 sec rozdzielczosc pomiaru)
+Czas wykonania programu:   2.1040 sec (0.0010 sec rozdzielczosc pomiaru)
+Klasyczny algorytm mnozenia macierzy, liczba watkow 4 
+Czas wykonania programu:   2.1880 sec (0.0010 sec rozdzielczosc pomiaru)
+Klasyczny algorytm mnozenia macierzy, liczba watkow 4 
+Czas wykonania programu:   2.2640 sec (0.0010 sec rozdzielczosc pomiaru)
+Klasyczny algorytm mnozenia macierzy, liczba watkow 4 
+Czas wykonania programu:   3.0420 sec (0.0010 sec rozdzielczosc pomiaru)
+Czas wykonania programu:   0.5660 sec (0.0010 sec rozdzielczosc pomiaru)
+Klasyczny algorytm mnozenia macierzy, liczba watkow 4 
+Czas wykonania programu:   2.8790 sec (0.0010 sec rozdzielczosc pomiaru)
+Czas wykonania programu:   0.5420 sec (0.0010 sec rozdzielczosc pomiaru)
+Czas wykonania programu:   0.2130 sec (0.0010 sec rozdzielczosc pomiaru)
+Klasyczny algorytm mnozenia macierzy, liczba watkow 4 
+Czas wykonania programu:   3.0730 sec (0.0010 sec rozdzielczosc pomiaru)
+Czas wykonania programu:   0.7170 sec (0.0010 sec rozdzielczosc pomiaru)
+Czas wykonania programu:   0.2160 sec (0.0010 sec rozdzielczosc pomiaru)
+Klasyczny algorytm mnozenia macierzy, liczba watkow 4 
+Czas wykonania programu:   2.8200 sec (0.0010 sec rozdzielczosc pomiaru)
+Czas wykonania programu:   0.5460 sec (0.0010 sec rozdzielczosc pomiaru)
+Czas wykonania programu:   0.2210 sec (0.0010 sec rozdzielczosc pomiaru)
+Klasyczny algorytm mnozenia macierzy, liczba watkow 4 
+Czas wykonania programu:   3.1210 sec (0.0010 sec rozdzielczosc pomiaru)
+Czas wykonania programu:   0.6780 sec (0.0010 sec rozdzielczosc pomiaru)
+Czas wykonania programu:   0.2180 sec (0.0010 sec rozdzielczosc pomiaru)
+Klasyczny algorytm mnozenia macierzy, liczba watkow 4 
+Czas wykonania programu:   2.9050 sec (0.0010 sec rozdzielczosc pomiaru)
+Czas wykonania programu:   0.7290 sec (0.0010 sec rozdzielczosc pomiaru)
+Czas wykonania programu:   0.2210 sec (0.0010 sec rozdzielczosc pomiaru)
+Klasyczny algorytm mnozenia macierzy, liczba watkow 4 
+Czas wykonania programu:   2.9480 sec (0.0010 sec rozdzielczosc pomiaru)
+Czas wykonania programu:   0.6810 sec (0.0010 sec rozdzielczosc pomiaru)
+Czas wykonania programu:   0.2240 sec (0.0010 sec rozdzielczosc pomiaru)
+Klasyczny algorytm mnozenia macierzy, liczba watkow 4 
+Czas wykonania programu:   3.0400 sec (0.0010 sec rozdzielczosc pomiaru)
+Czas wykonania programu:   0.7000 sec (0.0010 sec rozdzielczosc pomiaru)
+Czas wykonania programu:   0.0680 sec (0.0010 sec rozdzielczosc pomiaru)
