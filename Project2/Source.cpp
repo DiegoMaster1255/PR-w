@@ -14,11 +14,13 @@
 int NumThreads;
 double start;
 
-//static const int ROWS = 1000;     // liczba wierszy macierzy
-//static const int COLUMNS = 1000;  // lizba kolumn macierzy
+static const int N = 300;
 
-static const int N = 1024;
-static const int R = 128;
+static const int ROWS = N;     // liczba wierszy macierzy
+static const int COLUMNS = N;  // lizba kolumn macierzy
+
+
+static const int R = 256;
 
 float matrix_a[N][N];    // lewy operand 
 float matrix_b[N][N];    // prawy operand
@@ -84,7 +86,8 @@ void multiply_matrices_JKI_v1()
 	for (int j = 0; j < N; j++)
 		for (int k = 0; k < N; k++) {
 			float r = matrix_b[k][j];
-			for (int i = 0; i < N; i++)
+			int i = 0;
+			for (i; i < N; i++)
 				matrix_r[i][j] += matrix_a[i][k] * r;
 		}
 			
@@ -93,15 +96,13 @@ void multiply_matrices_JKI_v1()
 
 
 
-
-
 void multiply_matrices_6() {
 
-#pragma omp parallel //kod w wersji równoleg³ej
+//kod w wersji równoleg³ej
 	for (int i = 0; i<N; i += R)
 		for (int j = 0; j<N; j += R)
 			for (int k = 0; k<N; k += R)
-#pragma omp for //jeden z mo¿liwych wariantów podzia³u pracy
+#pragma omp parallel for  //jeden z mo¿liwych wariantów podzia³u pracy
 				for (int ii = i; ii<i + R; ii++)
 					for (int jj = j; jj<j + R; jj++)
 						for (int kk = k; kk<k + R; kk++)
@@ -112,7 +113,7 @@ void multiply_matrices_6() {
 void multiply_matrices_sequence()
 {
 	// mnozenie macierzy 
-	#pragma omp parallel for 
+	//#pragma omp parallel for 
 	for (int i = 0; i < N; i++)
 		for (int k = 0; k < N; k++)
 			for (int j = 0; j < N; j++)
@@ -165,7 +166,7 @@ int main(int argc, char* argv[])
 	multiply_matrices_JKI_v0();
 	printf("JKIv0 ");
 	print_elapsed_time();
-	initialize_matrices();
+	initialize_matricesZ();
 	start = (double)clock() / CLK_TCK;
 	multiply_matrices_JKI_v1();
 	printf("JKIv1 ");
