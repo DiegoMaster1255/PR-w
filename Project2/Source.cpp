@@ -60,17 +60,38 @@ void print_result()
 	}
 }
 
-void multiply_matrices_JKI()
+void multiply_matrices_JKI_v0()
 {
 	// !!TODO Trzeba ogarn¹æ jaki to ma rozmiar i jak wprowadziæ lokalnoœæ
 	// I ogólnie co ma byæ, bo nie wiem
-#pragma omp parallel for 
+
+#pragma omp parallel for
 	for (int j = 0; j < N; j++)
-		for (int k = 0; k < N; k++)
+		for (int k = 0; k < N; k++) {
 			for (int i = 0; i < N; i++)
 				matrix_r[i][j] += matrix_a[i][k] * matrix_b[k][j];
+		}
+
 
 }
+
+void multiply_matrices_JKI_v1()
+{
+	// !!TODO Trzeba ogarn¹æ jaki to ma rozmiar i jak wprowadziæ lokalnoœæ
+	// I ogólnie co ma byæ, bo nie wiem
+
+#pragma omp parallel for
+	for (int j = 0; j < N; j++)
+		for (int k = 0; k < N; k++) {
+			float r = matrix_b[k][j];
+			for (int i = 0; i < N; i++)
+				matrix_r[i][j] += matrix_a[i][k] * r;
+		}
+			
+
+}
+
+
 
 
 
@@ -138,10 +159,16 @@ int main(int argc, char* argv[])
 	fprintf(result_file, "Klasyczny algorytm mnozenia macierzy, liczba watkow %d \n", NumThreads);
 	printf("liczba watkow  = %d\n\n", NumThreads);
 
+
 	initialize_matrices();
 	start = (double)clock() / CLK_TCK;
-	multiply_matrices_JKI();
-	printf("JKI ");
+	multiply_matrices_JKI_v0();
+	printf("JKIv0 ");
+	print_elapsed_time();
+	initialize_matrices();
+	start = (double)clock() / CLK_TCK;
+	multiply_matrices_JKI_v1();
+	printf("JKIv1 ");
 	print_elapsed_time();
 	initialize_matricesZ();
 	start = (double)clock() / CLK_TCK;
